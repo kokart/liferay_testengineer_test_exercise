@@ -1,0 +1,1 @@
+https://github.com/kokart/liferay_automated_testing
