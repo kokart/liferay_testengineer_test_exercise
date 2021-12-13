@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         padding: 10px;
+         }
+      </style>
+      <title>Liferay Test Planning</title>
+   </head>
+   <body>
+      <h1>Test Planning Exercise</h1>
+      <p>Visit https://forms.liferay.com/web/forms/shared/-/form/122548 to design a test plan.</p>I have noticed that date format is different using en or pt language. I have not classified test using Critical, Medium or Low, but I would use it in real environment. All test will be done using <b>Chrome browser</b>.
+	  <table>
+         <tr>
+            <th>Test Case Number</th>
+            <th>Scenario</th>
+            <th>Test Description</th>
+            <th>Expected Result</th>
+            <th>Status</th>
+            <th>Version</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Positive Case in English. Valid input for all 3 fields</td>
+            <td>Type: Name: Alfredo Soto | DoB: 12/12/2021 | Why field: Lorem ipsum </td>
+            <td>After click on Submit button, Success message is displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+   <tr>
+            <td>2</td>
+            <td>Positive Case: Change language form</td>
+            <td>Change between languages</td>
+            <td>All texts have their translation</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>      
+	  <tr>
+            <td>3</td>
+            <td>Positive Case in PT. Valid input for all 3 fields. Just this one in PT</td>
+            <td>Type: Name: Alfredo Soto | DoB: 12/13/2021 | Why field: Lorem ipsum</td>
+            <td>After click on Submit button, Success message is displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		  <tr>
+            <td>4</td>
+            <td>Testing mandatory fields in all 3 fields</td>
+            <td>Empty values on all form fields</td>
+            <td>After click on submit button, 3 error messages are displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Testing dob and why mandatory field. </td>
+            <td>Type: Name: Alfredo Soto | DOB and Why field empty value</td>
+            <td>After click on Submit button an error message is displayed on dob and why field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		 <tr>
+            <td>6</td>
+            <td>Testing name and why mandatory field. </td>
+            <td>Type: Name: empty value | DOB: 12/13/2021| Why field empty value</td>
+            <td>After click on Submit button an error message is displayed on name and why field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		 <tr>
+            <td>7</td>
+            <td>Testing name and dob mandatory field. </td>
+            <td>Type: Name: empty value | DOB: empty value|Why field: Lorem ipsum</td>
+            <td>After click on Submit button an error message is displayed on name and dob field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+			 <tr>
+            <td>8</td>
+            <td>Testing name mandatory field. </td>
+            <td>Type: Name: empty value |DOB: 12/13/2021 |Why field: lorem ipsum</td>
+            <td>After click on Submit button an error message is displayed on name field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		  <tr>
+            <td>9</td>
+            <td>Testing dob mandatory field. </td>
+            <td>Type: Name: Alfredo |DOB: empty value |Why field: lorem ipsum</td>
+            <td>After click on Submit button an error message is displayed on dob field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		  <tr>
+            <td>10</td>
+            <td>Testing why mandatory field. </td>
+            <td>Type: Name: Alfredo Soto | DOB: 12/13/2021 |Why field empty value</td>
+            <td>After click on Submit button an error message is displayed on why field</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Testing strange inputs. Special chars</td>
+            <td>Type special chars such as &%/()^ on each field </td>
+            <td>After click on Submit button, Success message is displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+         <tr>
+            <td>12</td>
+            <td>Testing strange inputs. White spaces to see if trim function is used</td>
+            <td>Type white spaces in each field </td>
+            <td>After click on submit button, 3 error messages are displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		 <tr>
+            <td>13</td>
+            <td>Testing using long data. maxlength of input</td>
+            <td>Type long data in each text field. Use notepad or similar to generate long data. </td>
+            <td>After click on Submit button, Success message is displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+		 <tr>
+            <td>14</td>
+            <td>Testing using ascii and other data using char map keyboard function</td>
+            <td>Type Æƒœœ and similar data in each text field </td>
+            <td>After click on Submit button, Success message is displayed</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+          <tr>
+            <td>15</td>
+            <td>XSS injection</td>
+            <td>Type: Name: XSS example from OWASP | DoB: 12/13/2021 | Why field: XSS example from OWASP </td>
+            <td>Data input is cleaned</td>
+            <td>No tested</td>
+            <td>build_fake_3.SNAPSHOT</td>
+         </tr>
+      </table>
+      <p>After these fixed test cases, I will do exploratory testing playing with different dates (ddMMYYYY,YYYY-mm-dd, mmYYYY, etc) either choosing from datapicker or typing it. Also I will change URL parametes such as languageId. No SQL injection test are implemented because I think database is not used in this form.No navigation in private mode is done. Furthermore, it would be a good option test if the form is sent by email or another way.</p>
+   </body>
+</html>
